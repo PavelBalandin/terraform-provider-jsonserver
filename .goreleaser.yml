@@ -29,8 +29,6 @@ builds:
     ignore:
       - goos: darwin
         goarch: '386'
-      - goos: windows
-        goarch: arm64 # Exclude unsupported pair
     binary: '{{ .ProjectName }}_v{{ .Version }}'
 archives:
   - format: zip
